@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.overflow-1 {
+  background-color: chocolate;
+  width: 700px;
+  height: 100px;
+  overflow-y: scroll;
+}
+
+/* width */
+.overflow-1::-webkit-scrollbar {
+  width: 5px;
+  height: 50px;
+}
+
+/* Track */
+.overflow-1::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.overflow-1::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.overflow-1::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.overflow-2 {
+  background-color: darkcyan;
+  display: flex;
+  gap: 20px;
+  width: 1000px;
+  overflow-x: scroll;
+}
+.overflow-2::-webkit-scrollbar-thumb {
+  display: none;
+}
+.overflow-2::-webkit-scrollbar {
+  display: none;
+}
+.overflow-2 div {
+  padding: 20px;
+  background-color: cadetblue;
+  color: white;
+  width: 400px;
+  flex: 0 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  background-color: burlywood;
+  height: 100vh;
+}
+section:nth-child(1) {
+  margin-top: 20px;
+}
+section:nth-child(2) {
+  background-color: crimson;
+}
+section:nth-child(3) {
+  background-color: coral;
+}
+section:nth-child(4) {
+  background-color: darkgoldenrod;
+}
+
+nav {
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+nav a {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
